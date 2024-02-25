@@ -1,7 +1,10 @@
 // Define the function
-function greet(name) {
-    return '${name}!' 
+const greet = (name) => {
+    return `Hello, ${name}!`;
 }
+/*function greet(name) {
+    return '${name}!' 
+}*/
 
 // Call the function 
 var greeting = greet(Andrew);
