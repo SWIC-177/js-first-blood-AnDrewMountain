@@ -7,4 +7,4 @@ function greet(name) {
 var greeting = greet(Andrew);
 
 //Print result in the console
-//console.log("Hello, ", name);
+console.log("Hello, ", name);
