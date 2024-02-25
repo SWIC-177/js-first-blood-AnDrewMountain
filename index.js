@@ -1,6 +1,6 @@
 // Define the function
 function greet(name) {
-    return name 
+    return '${name}!' 
 }
 
 // Call the function 
