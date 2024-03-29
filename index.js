@@ -50,4 +50,39 @@ const person = {
   const adultMessage = verifyAdulthood(person.name, person.age); // Corrected function call
   
   console.log(adultMessage);
+
+  const people = [
+    {
+      name: "John",
+      age: 17,
+    },
+    {
+      name: "Jane",
+      age: 20,
+    },
+    {
+      name: "Mary",
+      age: 25,
+    },
+    {
+      name: "Peter",
+      age: 30,
+    },
+    {
+      name: "Paul",
+      age: 35,
+    },
+  ];
+      
+  function verifyAdulthood(personName, personAge) {
+    if (personAge >= 18) return `Welcome, ${personName}!`;
+    return `You are not old enough to enter, ${personName}.`;
+  }
+  
+  // Loop through the people array
+  for (const person of people) {
+    // Call verifyAdulthood function for each person
+    const message = verifyAdulthood(person.name, person.age);
+    console.log(message);
+  }
   
