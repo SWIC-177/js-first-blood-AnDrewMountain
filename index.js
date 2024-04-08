@@ -109,3 +109,19 @@ console.log(double(10)); // Output: 20
 
 const triple = createMultiplier(3);
 console.log(triple(10)); // Output: 30
+
+//Part Two
+
+function createScorer(increment) {
+  return function(score) {
+    return score + increment;
+  };
+}
+
+// For basketball
+const basketballScorer = createScorer(1);
+console.log(basketballScorer(10)); // Output: 11
+
+// For football
+const footballScorer = createScorer(6);
+console.log(footballScorer(14)); // Output: 20
