@@ -85,4 +85,9 @@ const person = {
     const message = verifyAdulthood(person.name, person.age);
     console.log(message);
   }
+
+  //Week 11 Homework
+
+  // Creating an arrow function
+const square = (x) => x * x;
   
