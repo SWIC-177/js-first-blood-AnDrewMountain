@@ -91,3 +91,9 @@ const person = {
   // Creating an arrow function
 const square = (x) => x * x;
   
+// Example of passing a function as an argument
+function operateOnNumber(num, operation) {
+  return operation(num);
+}
+
+console.log(operateOnNumber(5, square));
