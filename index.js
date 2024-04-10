@@ -129,21 +129,47 @@ console.log(footballScorer(14)); // Output: 20 */
 
 //Week 12
 
-const person = {
-  name: "John Doe",
-  age: 23,
-  address: {
-    street: "123 Main St",
-    city: "New York",
-    state: "NY",
-    zip: "10001",
+const people = [
+  {
+    id: 1,
+    name: "John Doe",
+    age: 23,
   },
-};
+  {
+    id: 2,
+    name: "Jane Doe",
+    age: 29,
+  },
+  {
+    id: 3,
+    name: "Jim Doe",
+    age: 34,
+  },
+  {
+    id: 4,
+    name: "Jill Doe",
+    age: 45,
+  },
+  {
+    id: 5,
+    name: "Jack Doe",
+    age: 56,
+  },
+  {
+    id: 6,
+    name: "Jenny Doe",
+    age: 67,
+  },
+];
 
-// Create a new object with the same properties as the original object.
-const otherPerson = { ...person };
+function renameOdds(p) {
+  for (let i = 0; i < p.length; i++) {
+    if (p[i].id % 2 !== 0) {
+      p[i].name = "Odd Name";
+    }
+  }
 
-otherPerson.name = "Jane Doe";
+  return p;
+}
 
-console.log(`Person's name is: ${person.name}`);
-console.log(`Other Person's name is: ${otherPerson.name}`);
+console.log(renameOdds(people));
