@@ -28,7 +28,7 @@
 //    if(age < 18){
 //        return `You are not old enough to enter, ${name}`
 //    }else {
-//        return `Wlecome,${name}`;
+//        return `Welcome,${name}`;
 //    }
 //}
 
