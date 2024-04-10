@@ -36,7 +36,7 @@
 
 //Week 10 Homework
 
-const person = {
+/* const person = {
     name: "John",
     age: 18, // Changed age to 18 to make sure it works
   };
@@ -124,4 +124,26 @@ console.log(basketballScorer(10)); // Output: 11
 
 // For football
 const footballScorer = createScorer(6);
-console.log(footballScorer(14)); // Output: 20
+console.log(footballScorer(14)); // Output: 20 */
+//shift alt a for comment multiple lines
+
+//Week 12
+
+const person = {
+  name: "John Doe",
+  age: 23,
+  address: {
+    street: "123 Main St",
+    city: "New York",
+    state: "NY",
+    zip: "10001",
+  },
+};
+
+// Create a new object with the same properties as the original object.
+const otherPerson = { ...person };
+
+otherPerson.name = "Jane Doe";
+
+console.log(`Person's name is: ${person.name}`);
+console.log(`Other Person's name is: ${otherPerson.name}`);
